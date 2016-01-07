@@ -1,0 +1,94 @@
+CONTACT INFO:
+
+Jordan Brown
+jbrown94@u.rochester.edu
+CSC 172 FALL 2015
+Assignment: PROJECT 1
+
+NOTE:
+When I ran my program in Eclipse it worked as predicted. However, when I run and compile it via the command prompt
+(windows), my program did not behave properly. 
+
+LAB Synopsis:
+
+This project was on implementing a Mastermind game, where the user is the codemaker and computer is the codebreaker.
+
+For my algorithm, I tried following a variation of Donald's Knuth 5 Guess Algorithm. Knuth recommends that the first
+guess of the codebreaker should be '1122'. My possible positions were, 2, 3, and 4, so the first guesses of each position
+corresponded to Knuth's recommendations. 
+
+e.g. If R represents the color Red and B represents the color blue, my computer's first guess would always be as follows:
+
+2-positions: RR
+3-positions: RRB
+4-postions: RRBB
+
+After the computer makes the first guess, the user gives feedback on how many black or white pegs the computer earned.
+If the computer gets the same number of black pegs as the user's chosen positions, the algorithm ends.
+
+Otherwise, I calculate the elimination decisions as follows: 
+
+The computer has a list of all the possible combinations that it refers to when making elimination decisions.
+
+If computer scores both a 0 in white and black pegs, then regardless of the number of total positions, the computer
+eliminates all combinations that contain any letters of its previous guess. This is because none of the colors contained
+in the guess are contained in the user's secret combination.
+ 
+
+For 2-Positions: 
+
+If computer score at least 1 white or black peg, then the computer eliminates all combinations that don't contain at least one letter in guess.
+This is because the user's combination contains at least one letter in the guess. 
+
+If computer scores 2 white pegs, then the computer eliminates all combinations that don't contain all the letters in guess.
+This is because we know that the user's combination must be a rearrangement of the current two colors that the computer guess. 
+
+And the logic follows for the other positions...
+
+For 3-Positions: 
+
+If computer scores exactly 3 (white pegs, black and white or white and black combined, eliminate all combinations that 
+do not contain all of the letters in guess.
+
+If computer scores exactly 2 (white pegs, black pegs, or black an white pegs combined), eliminate all combinations that
+ do not contain at least two letters in guess
+ 
+If computer scores exactly 1, either white or black pegs, eliminate all combinations that don't contain any of the guess letters
+
+For 4-Positions:
+
+If computer scores exactly 4 white pegs, eliminate all combinations that do not contain all of the letters in guess
+If computer scores exactly 3 (black, white, or white and black, or black and white combined), eliminate all combinations that do not contain at least 3 of the letters in guess
+If computer scores exactly 2 (black, white, or black and white combined), eliminate all combinations that do not contain at least two letters in guess
+If computer scores exactly 1 (white or black pegs), eliminate all combinations that do not contain at least 1 letter in guess
+
+As the computer continues to guess, the combinations lists gets smaller and the computer gets closer to the correct guess in a reasonable amount of guesses
+
+
+ConsuleGUI class provides the prompts and input interactions between the user, MasterMindAI class creates and provides
+methods for an artificial intelligence to make decisions about eliminating unneeded possibilities and making the best
+moves to win the game, and MastermindGame class contains helper methods and a main method to run a game of Mastermind.
+
+GENERAL INSTRUCTIONS ON COMPILING AND RUNNING CODE:
+
+1. Move project file to Desktop
+2. Open Command Prompt window
+3. Enter cd <Desktop> 
+4. Enter cd <Lab file name> 
+5. Enter cd src
+5. Enter javac *.java 
+6. Enter java <ClassName> 
+
+Do not include angle brackets
+
+EXAMPLE INSTRUCTIONS FOR EACH PART:
+
+1. Move zip project file to Desktop
+2. Extract all files from zip project file
+3. Open Command Prompt window
+4. Enter cd Desktop 
+5. Enter cd Project01
+6. Enter cd src
+7. Enter javac *.java
+8. Enter java MastermindGame
+	... <output> ...

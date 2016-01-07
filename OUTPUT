@@ -1,0 +1,113 @@
+CONTACT INFO:
+
+Jordan Brown
+jbrown94@u.rochester.edu
+CSC 172 FALL 2015
+Assignment: PROJECT 1
+
+COMPILE AND RUN OUTPUT DIRECTLY FROM COMMAND LINE:
+
+
+
+C:\Users\Jordan>cd Desktop
+
+C:\Users\Jordan\Desktop>cd Project1
+
+C:\Users\Jordan\Desktop\Project1>cd src
+
+C:\Users\Jordan\Desktop\Lab7\src>javac *.java
+
+C:\Users\Jordan\Desktop\Lab7\src>java MastermindGame
+
+
+OUTPUT (FROM ECLIPSE Consule):
+
+Welcome to MasterMind!
+Mastermind is a code-breaking guessing game, where you will be the codemaker and the computer is the codebreaker. 
+First, select a combination of colors that has 1 to 4 positions from 4 possible colors.
+Your combination is kept secret. 
+Your opposing player, the computer, will guess a combination. 
+You will then enter in how many colors are the correct colors  and in the correct location (black tokens) 
+and also how many colors are of the correct color but in the wrong location (white token)
+
+
+Let's play! First, you'll need to pick a secret color combination with a number of positions. After you do, remember to write it down!
+The maximum amount of colors you may choose are 4.
+Enter how many colors you will have: 3
+Please enter the color values (single letters) you would like the computer to choose from. Separate by commas. 
+Example: If you wanted pink, green and blue you need to type in: P, G, B
+Use single letters only to represent colors.
+Y,O,R
+The possible amount of positions you can choose are from 2 to 4. With 4 being the maximum amount of positions.
+Please enter the number of positions you would like: 3
+The computer has guessed the following colors:
+ Y Y R Enter how many white pegs (correct color but wrong location) the computer earned: 
+0
+Enter how many black pegs (correct color and location) the computer earned: 
+0
+The computer has guessed the following colors:
+
+ O O O 
+Enter how many white pegs (correct color but wrong location) the computer earned: 
+0
+Enter how many black pegs (correct color and location) the computer earned: 
+3
+The computer wins the game! Your secret combination was: 
+   O  O  O 
+Would you like to play again? Enter yes or no: 
+yes
+Now starting a new game!
+Let's play! First, you'll need to pick a secret color combination with a number of positions. After you do, remember to write it down!
+The maximum amount of colors you may choose are 4.
+Enter how many colors you will have: 4
+Please enter the color values (single letters) you would like the computer to choose from. Separate by commas. 
+Example: If you wanted pink, green and blue you need to type in: P, G, B
+Use single letters only to represent colors.
+P,R,B,K
+The possible amount of positions you can choose are from 2 to 4. With 4 being the maximum amount of positions.
+Please enter the number of positions you would like: 3
+The computer has guessed the following colors:
+ P P B Enter how many white pegs (correct color but wrong location) the computer earned: 
+0
+Enter how many black pegs (correct color and location) the computer earned: 
+1
+The computer has guessed the following colors:
+
+ P P P 
+Enter how many white pegs (correct color but wrong location) the computer earned: 
+0
+Enter how many black pegs (correct color and location) the computer earned: 
+1
+The computer has guessed the following colors:
+
+ P P R 
+Enter how many white pegs (correct color but wrong location) the computer earned: 
+1
+Enter how many black pegs (correct color and location) the computer earned: 
+1
+The computer has guessed the following colors:
+
+ P P K 
+Enter how many white pegs (correct color but wrong location) the computer earned: 
+0
+Enter how many black pegs (correct color and location) the computer earned: 
+2
+The computer has guessed the following colors:
+
+ P R P 
+Enter how many white pegs (correct color but wrong location) the computer earned: 
+0
+Enter how many black pegs (correct color and location) the computer earned: 
+2
+The computer has guessed the following colors:
+
+ P R K 
+Enter how many white pegs (correct color but wrong location) the computer earned: 
+0
+Enter how many black pegs (correct color and location) the computer earned: 
+3
+The computer wins the game! Your secret combination was: 
+   P  R  K 
+Would you like to play again? Enter yes or no: 
+no
+Thanks for playing! Goodbye!
